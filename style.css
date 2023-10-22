@@ -8,30 +8,32 @@
 
 /* Style the heading */
 .heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:grey;
-    color:white;
+    margin-left: 10px;
+    font-size: 50px;
+    color:rgb(0, 255, 195);
     font-weight:bold ;
+    
 }
 
 /* Style the main container */
 .container {
     width: 100%;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
-    background-image: url(calc\ pic.jpg);
+    background-image: url(calc1.jpg);
     
 }
 
 /* Style the calculator */
 .calculator{
-    background:#3a4452;
+    background: #34aeeb;
     padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 20px;  
     border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 300px;
 }
 
 /* Style calculator form inputs */
@@ -40,11 +42,15 @@
     outline: 0;
     width: 60px;
     height: 60px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
+    0 -2px 4px rgba(255, 255, 255, 0.2), 0 -4px 8px rgba(255, 255, 255, 0.2), 0 -8px 16px rgba(255, 255, 255, 0.2);
+
+    
+    /*box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.2);*/
     background: transparent;
     font-size: 20px;
-    color: white;
+    color: black;
     cursor: pointer;
     margin: 10px;
 }
@@ -88,4 +94,5 @@ form input.operator1{
 form input.operator3{
     background-color: black;
     font-weight: bold;
+    color: white;
 }
