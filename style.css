@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     background-image: url(calc1.jpg);
+    background-size: 100%;
     
 }
 
@@ -29,11 +30,11 @@
 .calculator{
     background: #34aeeb;
     padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 20px;  
+    margin: 50px;
+    border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-left: 300px;
+    margin: 0 auto; /* Center the calculator horizontally */
+    max-width: 600px; /* Adjust the maximum width for responsiveness */
 }
 
 /* Style calculator form inputs */
@@ -45,9 +46,6 @@
     border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
     0 -2px 4px rgba(255, 255, 255, 0.2), 0 -4px 8px rgba(255, 255, 255, 0.2), 0 -8px 16px rgba(255, 255, 255, 0.2);
-
-    
-    /*box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.2);*/
     background: transparent;
     font-size: 20px;
     color: black;
@@ -66,15 +64,13 @@ form .display{
 form .display input{
     text-align: right;
     flex: 1;
-    font-size:45px ;
-    box-shadow: none;
+    font-size: 2rem; 
 }
 
 /* Style operator buttons */
 form input.operator{
     background-color: rgb(255, 251, 0);
     color: black;
-    font-weight: bolder;
     font-weight: bold;
 }
 
@@ -95,4 +91,18 @@ form input.operator3{
     background-color: black;
     font-weight: bold;
     color: white;
+}
+
+
+/* Media Query for Mobile Phones */
+@media (max-width: 768px) {
+    .container  {
+       width: 100%;
+       display: block;
+    }
+    form .calculator{
+        width: 100%;
+        display: block;
+    }
+
 }
