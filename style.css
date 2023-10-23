@@ -95,7 +95,7 @@ form input.operator3{
 
 
 /* Media Query for Mobile Phones */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .container  {
        width: 100%;
        display: block;
@@ -105,4 +105,19 @@ form input.operator3{
         display: block;
     }
 
+}*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+       
+    }
+
+    /* Adjust font size, padding, or any other properties as needed */
+    .calculator {
+        display: block;
+        font-size: 5px;
+        padding: 10px;
+        
+    }
 }
